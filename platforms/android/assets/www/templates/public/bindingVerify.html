@@ -1,0 +1,23 @@
+<ion-view view-title="绑定银行卡">
+	<ion-content  ng-controller="AccountCtrl">
+		<div  class="list"  id="main"  >
+			<form  name="registerLaborForm">
+
+				<div class="item item-input">
+				<span class="input-label">验证码：</span>
+						<input type="text" placeholder="输入验证码"   ng-model="user.smscode" style="width: 80%;" >
+						     <button class="button button-small button-assertive"   ng-click="resendVerifyCode()">发送验证码</button>
+						 </div>
+
+
+				<div class="padding">
+					<button class="button button-full button-balanced"  ng_disabled="!registerLaborForm.$valid"  ng-click="verifySMSCode()">
+						提交
+					</button>
+				</div>
+
+			</form>
+
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,255 @@
+html, body {
+	font-size: 14px;
+	height: 100%;
+}
+
+.hover {
+	opacity: .8;
+}
+
+.flex-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-con {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.flex-vertical {
+	-webkit-box-orient: vertical;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+}
+
+.border-t,
+.border-b {
+	position: relative;
+}
+
+.border-t:before,
+.border-b:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*background: #ddd;*/
+	right: 0;
+	height: 1px;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.border-b:after {
+	top: auto;
+	bottom: 0;
+}
+
+#wrap {
+	height: 100%;
+}
+
+.swipe {
+	overflow: hidden;
+	position: relative;
+	height: 275px;
+}
+
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+.swipe-wrap .swipe-con {
+	float: left;
+	position: relative;
+}
+
+.swipe-wrap .swipe-con img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+#main {
+	padding: 2px;
+	/*background-color: #e5e5e5;*/
+	/*height: 370px;*/
+}
+
+#main .flex-vertical .layout {
+	background:   url() right bottom no-repeat;
+	/*margin: .3rem;*/
+	padding: .3rem;
+	background-size: auto 50%;
+	line-height: 2rem;
+	color: white;
+	font-size: 1.8rem;
+}
+
+#main a{
+	text-decoration: none;
+	/*margin:.3rem;*/
+}
+
+#main .flex-vertical .layout p {
+	font-size: 1rem;
+}
+
+#main .flex-vertical .layout.ic-solution {
+	background-image: url(../img/ic-project.png);
+	/*background-color: #FE0000;*/
+}
+
+#main .flex-vertical .layout.ic-labor {
+	background-image: url(../img/ic-labor.png);
+	/*background-color: #0295DD;*/
+}
+
+#main .flex-vertical .layout.ic-team {
+	background-image: url(../img/ic-team.png);
+	/*background-color: #DC3C00;*/
+	font-size: 1.6rem;
+}
+
+#main .flex-vertical .layout.ic-company {
+	background-image: url(../img/ic-company.png);
+	/*background-color: #7A1DDD;*/
+	font-size: 1.6rem;
+}
+
+#main .flex-vertical .layout.ic-shop {
+	background-image: url(../img/ic-shop.png);
+	/*background-color: #DC3C00;*/
+}
+
+#main .flex-vertical .layout.ic-contact {
+	background-image: url(../img/ic-contact.png);
+	/*background-color: #FD991F;*/
+	font-size: 1.6rem;
+}
+
+#main .flex-vertical .layout.ic-contract {
+	background-image: url(../img/ic-contract.png);
+	font-size: 1.2rem;
+	/*background-color: #D583FF;*/
+
+}
+
+#main .flex-vertical .layout.ic-financing {
+	background-image: url(../img/ic-financing.png);
+	/*background-color: #FE0000;*/
+	font-size: 1.2rem;
+}
+
+.flex-4 {
+	-webkit-box-flex: 4;
+	-webkit-flex: 4;
+	flex: 4;
+}
+
+.flex-2 {
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	flex: 2;
+}
+
+
+.hover {
+	opacity: .8;
+}
+
+
+
+header {
+	background-color: #FCFCFC;
+	line-height: 42px;
+	height: 42px;
+	position: relative;
+}
+
+header b {
+	width: 42px;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	background: url() no-repeat center;
+	background-size: 70% auto;
+}
+
+header b.ic-back {
+	background-image: url(../img/ic-back.png);
+}
+
+header b.ic-check {
+	background-image: url(../img/ic-check.png);
+	float: right;
+}
+
+header .title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	font-size: 18px;
+	line-height: 42px;
+}
+
+
+.item-remark{
+	float: right;
+	/*color: #aaa;*/
+	/*font-size: 14px; */
+	/*border-bottom: solid 1px gray;*/
+	padding:15px;
+	background-color:#ffffff;
+	width: 100%;
+	line-height: 25px;
+}
+
+
+.subheader{
+	margin-top: 20px;
+}
+
+.button-small
+{
+	margin:1px;
+}
+
+
+#searchDiv
+{
+	padding:3px;
+}
+
+
+.bar-orange
+{
+	border-color: orange;
+    background-color: #11c1f3;
+    background-image: linear-gradient(0deg,#0a9ec7,#0a9ec7 50%,transparent 50%);
+    color: #fff;
+}
+
+.bg-red{
+	background-image: url(../img/rect_red.png);background-repeat: no-repeat;
+}
+
+.bg-green{
+	background-image: url(../img/rect_green.png);background-repeat: no-repeat;
+}
+
+.btn-red{
+	float:right;font-size: small;border-radius: 20px;border: solid 1px #FF8685;color:#FF8685;min-height: 30px;line-height: 20px;
+}
+
+.btn-green{
+	float:right;font-size: small;border-radius: 20px;border: solid 1px #79BE33;color:#79BE33;min-height: 30px;line-height: 20px;
+}

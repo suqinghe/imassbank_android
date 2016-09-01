@@ -1,0 +1,13 @@
+<ion-view title="目前支持银行" >
+	<ion-content ng-controller="BankListCtrl">
+		<div class="list">
+
+			<a class="item item-avatar"  ng-repeat="bank in banks" id="{{bank.Code}}"  ng-click="getBankCode('{{bank.Code}}','{{bank.Name}}')" > 
+			<img ng-src="img/banks/{{bank.Code}}.png"> <h2>{{bank.Name}}</h2>
+			<p>
+				{{bank.Desc}}
+			</p> 
+			</a> 
+		</div>
+	</ion-content>
+</ion-view>
