@@ -1,0 +1,80 @@
+<ion-view view-title="账户详情">
+	<ion-content>
+		<div class="list">
+			<ion-item class="item-divider">
+				基础信息
+			</ion-item>
+			<ion-item  type="item-text-wrap">
+				公司编号
+				<span class="item-note">{{company.No}}</span>
+			</ion-item>
+			<ion-item  type="item-text-wrap">
+				公司名称
+				<span class="item-note">{{company.Name}}</span>
+			</ion-item>
+			<ion-item  type="item-text-wrap">
+				公司全称
+				<span class="item-note">{{company.FullName}}</span>
+			</ion-item>
+			<ion-item   type="item-text-wrap">
+				<i class="icon ion-location"></i>
+				地址
+				<span class="item-note">{{company.Address}}</span>
+			</ion-item>
+
+			<ion-item class="item-divider">
+				帐号信息
+			</ion-item>
+			<ion-item   >
+				<i class="icon ion-iphone"></i>
+				手机
+				<span class="item-note">{{company.Mobile}}</span>
+			</ion-item>
+			<ion-item   >
+				<i class="icon ion-ios-telephone"></i>
+				座机
+				<span class="item-note">{{company.Phone}}</span>
+			</ion-item>
+			<ion-item  >
+				<i class="icon ion-email"></i>
+				邮箱
+				<span class="item-note">{{company.Email}}</span>
+			</ion-item>
+			<ion-item  type="item-text-wrap">
+				<i class="icon ion-social-chrome"></i>
+				网址
+				<span class="item-note">{{company.WebSite}}</span>
+			</ion-item>
+
+			<div class="item item-divider">
+				认证信息
+			</div>
+			<ion-item >
+				<i class="icon ion-person"></i>
+				法人代表
+				<span class="item-note">{{company.Principal}}</span>
+			</ion-item>
+			<ion-item  type="item-text-wrap">
+				组织机构代码
+				<span class="item-note">{{company.Code}}</span>
+			</ion-item>
+
+			<div class="item item-divider">
+				资质信息
+			</div>
+			<ion-item  type="item-text-wrap">
+				公司资质
+				<span class="item-note">{{company.StrQualifications}}</span>
+			</ion-item>
+
+			<div class="item item-divider">
+				其他信息
+			</div>
+			<ion-item  type="item-text-wrap">
+				备注
+				<span class="item-note">{{company.Remark}}</span>
+			</ion-item>
+
+		</div>
+	</ion-content>
+</ion-view>

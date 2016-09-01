@@ -1,0 +1,60 @@
+<ion-view view-title="我的">
+	<ion-content>
+		<ion-list>
+			<div class="card" ng-repeat="x in list">
+				<div ng-if="x.realservicefeerate!=9&&x.realservicefeerate!=7">
+					<div class="item item-divider bg-red" >
+						{{x.creditproductname}}
+					</div>
+					<div class="item item-text-wrap">
+						<table style="width:100%;text-align: center;">
+							<tr style="height:25px;"> 
+								<td style="width:33%;">贷款金额</td>
+								<td style="width:33%;">贷款日期</td>
+								<td style="width:33%;">还款日期</td>
+							</tr>
+							<tr>
+								<td>{{x.loanamount/100.0}}元</td>
+								<td>{{x.dateofcredit  | date:'yyyy.MM.dd'}}</td>
+								<td>{{x.dateofcheck | date:'yyyy.MM.dd'}}</td>
+							</tr>
+						</table>
+					</div>
+					<div class="item item-divider">
+						<a  href="#/tab/payment/2/{{x.orderid}}/{{x.loannumbers}}/{{x.creditproductcode}}"  style="float:right;">
+						<button class="button btn-red">
+							去还款>
+						</button> </a>
+					</div>
+				</div>
+				<div ng-if="x.realservicefeerate==9">
+					<div class="card">
+						<div class="item item-divider bg-green">
+							{{x.creditproductname}}
+						</div>
+						<div class="item item-text-wrap">
+							<table  style="width:100%;text-align: center;">
+								<tr style="height:25px;">
+									<td style="width:33%; ">贷款金额</td>
+									<td style="width:33%;">贷款日期</td>
+									<td style="width:33%;">还款日期</td>
+								</tr>
+								<tr>
+									<td>{{x.loanamount/100.0}}元</td>
+								<td>{{x.dateofcredit  | date:'yyyy.MM.dd'}}</td>
+								<td>{{x.dateofcheck | date:'yyyy.MM.dd'}}</td>
+								</tr>
+							</table>
+						</div>
+						<div class="item item-divider">
+
+							<button class="button btn-green"  >
+								已还清
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

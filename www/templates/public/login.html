@@ -1,0 +1,30 @@
+<ion-view view-title="登录">
+	<ion-content ng-controller="LoginCtrl" class="padding">
+
+		<div  style="text-align: center;margin: 20px auto;" >
+			<img style="text-align: center;" ng-src="img/logo.png" alt="超能国际">
+		</div>
+
+		<form name="loginForm">
+			<div class="list">
+				<label class="item item-input  "> <img   class="icon  placeholder-icon" ng-src="img/register/user.png">
+					<input type="text" placeholder="手机号码" ng-model="user.mobile" >
+				</label>
+				<label class="item item-input  "> <img   class="icon  placeholder-icon" ng-src="img/register/password.png">
+					<input type="password" placeholder="密码" ng-model="user.passwd" >
+				</label>
+			</div>
+
+			<div class="padding">
+				<button class="button button-block button-assertive"  ng_disabled="!loginForm.$valid" ng-click="login()">
+					登录
+				</button>
+				<a  style="float:right;" ng-href="#">忘记密码？</a>
+			</div>
+
+			<div class="padding" style="margin-top:50px;">
+				<a  style="width:100%;text-align:center;float:right;"  ng-href="#/register">注册帐号</a>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>
